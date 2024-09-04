@@ -31,33 +31,33 @@ while i > 0:
     if keyboard.read_key() == "a":
         if gateChoice == "-10":
             starterValue -= 10
-        elif gateChoice == "-20":
+        if gateChoice == "-20":
             starterValue -= 20
-        elif gateChoice == "-30":
+        if gateChoice == "-30":
             starterValue -= 30
         if gateChoice == "+10":
             starterValue += 10
-        elif gateChoice == "+20":
+        if gateChoice == "+20":
             starterValue += 20
-        elif gateChoice == "+30":
+        if gateChoice == "+30":
             starterValue += 30
-        elif gateChoice == "x2":
+        if gateChoice == "x2":
             starterValue *= 2
             
     if keyboard.read_key() == "b":
-        if gateChoice == "/2":
-            starterValue /= 2
-        elif gateChoice == "/3":
-            starterValue /= 3
-        elif gateChoice == "/4":
-            starterValue /= 4
+        if gateChoice2 == "/2":
+            starterValue //= 2
+        if gateChoice2 == "/3":
+            starterValue //= 3
+        if gateChoice2 == "/4":
+            starterValue //= 4
         if gateChoice2 == "+40":
             starterValue += 40
-        elif gateChoice2 == "+50":
+        if gateChoice2 == "+50":
             starterValue += 50
-        elif gateChoice2 == "+60":
+        if gateChoice2 == "+60":
             starterValue += 60
-        elif gateChoice == "x10":
+        if gateChoice2 == "x10":
             starterValue *= 10
 
     print("\nYour current value is " + str(starterValue) + ".")
